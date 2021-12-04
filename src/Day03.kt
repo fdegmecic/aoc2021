@@ -47,7 +47,7 @@ fun main() {
             return input.first()
         }
 
-        val oxygenList = input.toMutableList()
+        val mutableInput = input.toMutableList()
 
         input.forEach { bits ->
             val transformedBits = bits.toCharArray()
@@ -64,18 +64,18 @@ fun main() {
         val mostCommon = when {
             bitCounterArray[index].oneBitCounter > bitCounterArray[index].zeroBitCounter -> ratingDecider
             bitCounterArray[index].oneBitCounter == bitCounterArray[index].zeroBitCounter -> ratingDecider
-            else -> if(ratingDecider == '0') '1' else if(ratingDecider == '1') '0' else ' '
+            else -> if (ratingDecider == '0') '1' else if (ratingDecider == '1') '0' else ' '
         }
 
         input.forEach { bits ->
             val transformedBits = bits.toCharArray()
 
             if (transformedBits[index] != mostCommon) {
-                oxygenList.remove(bits)
+                mutableInput.remove(bits)
             }
         }
 
-        return ratingRecursion(oxygenList, index + 1, ratingDecider)
+        return ratingRecursion(mutableInput, index + 1, ratingDecider)
     }
 
     fun getLifeSupportRating(input: List<String>): Int {
