@@ -82,10 +82,10 @@ class Submarine(
     }
 }
 
-data class Operations(
+data class Operation(
     val direction: String,
     val amount: Int,
 )
 
-fun transformInput(input: List<String>): List<Operations> =
-    input.flatMap { it.split(" ").zipWithNext { a, b -> Operations(a, b.toInt()) } }
+fun transformInput(input: List<String>): List<Operation> =
+    input.flatMap { it.split(" ").zipWithNext { a, b -> Operation(a, b.toInt()) } }
