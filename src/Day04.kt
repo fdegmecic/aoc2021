@@ -74,9 +74,7 @@ fun main() {
     println(lastWinRemainingNumbersSum(input))
 }
 
-class BingoBoard(
-    private val board: List<List<BingoField>>,
-) {
+class BingoBoard(private val board: List<List<BingoField>>) {
     private val transposedBoard: List<List<BingoField>> = board.transpose()
 
     fun markField(drawnNumber: Int): Boolean {
@@ -99,7 +97,6 @@ class BingoBoard(
 
     fun checkIfWon() = board.map { row -> row.all { it.isMarked } }.any { it } ||
             transposedBoard.map { row -> row.all { it.isMarked } }.any { it }
-
 }
 
 data class BingoField(val number: Int, var isMarked: Boolean = false) {
