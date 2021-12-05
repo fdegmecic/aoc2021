@@ -1,15 +1,16 @@
+```
+                                                    __.  .--,                      
+*-/___,  ,-/___,-/___,-/___,-/___,           _.-.=,{\/ _/  /`)
+ `\ _ ),-/___,-/___,-/___,-/___, )     _..-'`-(`._(_.;`   /
+  /< \\=`\ _ )`\ _ )`\ _ )`\ _ )<`--''`     (__\_________/___,
+         /< <\ </ /< /< /< </ /<           (_____Y_____Y___, 
+```
+
 # aoc2021
 
 Welcome to the Advent of Code[^aoc] Kotlin project created by [fdegmecic][github] using the [Advent of Code Kotlin Template][template] delivered by JetBrains.
 
 In this repository, fdegmecic is about to provide solutions for the puzzles using [Kotlin][kotlin] language.
-
-If you're stuck with Kotlin-specific questions or anything related to this template, check out the following resources:
-
-- [Kotlin docs][docs]
-- [Kotlin Slack][slack]
-- Template [issue tracker][issues]
-
 
 [^aoc]:
     [Advent of Code][aoc] – An annual event of Christmas-oriented programming challenges started December 2015.
