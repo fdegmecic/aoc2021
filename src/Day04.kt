@@ -66,10 +66,10 @@ fun main() {
         return winningNumber * winningBoard!!.getRemainingNumbersSum()
     }
 
-    val testInput = readInput("Day04_test")
+    val testInput = readInputAsListOfString("Day04_test")
     check(lastWinRemainingNumbersSum(testInput) == 1924)
 
-    val input = readInput("Day04")
+    val input = readInputAsListOfString("Day04")
     println(firstWinRemainingNumbersSum(input))
     println(lastWinRemainingNumbersSum(input))
 }

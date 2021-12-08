@@ -24,10 +24,10 @@ fun main() {
             .count { it.value > 1 }
     }
 
-    val testInput = readInput("Day05_test")
+    val testInput = readInputAsListOfString("Day05_test")
     check(getConvergenceOccurrence(testInput) { true } == 12)
 
-    val input = readInput("Day05")
+    val input = readInputAsListOfString("Day05")
     println(getConvergenceOccurrence(input) { it.first sharesAxisWith it.second })
     println(getConvergenceOccurrence(input) { true })
 }

@@ -85,10 +85,10 @@ fun main() {
         return oxygenGeneratorRating.toInt(2) * co2ScrubberRating.toInt(2)
     }
 
-    val testInput = readInput("Day03_test")
+    val testInput = readInputAsListOfString("Day03_test")
     println(getLifeSupportRating(testInput) == 230)
 
-    val input = readInput("Day03")
+    val input = readInputAsListOfString("Day03")
     println(getPowerConsumption(input))
     println(getLifeSupportRating(input))
 }

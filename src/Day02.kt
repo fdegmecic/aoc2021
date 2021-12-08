@@ -43,10 +43,10 @@ fun main() {
         return submarine.depth * submarine.horizontalPosition
     }
 
-    val testInput = readInput("Day02_test")
+    val testInput = readInputAsListOfString("Day02_test")
     check(part2(testInput) == 900)
 
-    val input = readInput("Day02")
+    val input = readInputAsListOfString("Day02")
     println(part1(input))
     println(part2(input))
 }
